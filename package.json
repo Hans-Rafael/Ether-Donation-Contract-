@@ -1,0 +1,17 @@
+{
+  "name": "ether-donation-contract-",
+  "version": "1.0.0",
+  "description": "Contrato funcional realizado para practicar testing\r ## Contrato de Donaciones\r * Permitir a los usuarios enviar ETH al contrato como donaciones.\r * Almacenar la cantidad total donada.\r * Registrar las donaciones de cada dirección.\r * Permitir que el propietario del contrato retire los fondos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hans Garcia",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@typechain/ethers-v5": "^11.1.2",
+    "hardhat": "^2.22.17"
+  }
+}
