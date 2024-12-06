@@ -6,7 +6,7 @@ pragma solidity 0.8.27;
  * @title DonationContract
  * @dev A simple contract to accept and track donations.
  */
-contract Donations {
+contract DonationsContract {
     /// @notice Emitted when a donation is made.
     /// @param donor The address of the donor.
     /// @param amount The amount donated in wei.
