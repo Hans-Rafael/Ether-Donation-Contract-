@@ -19,6 +19,12 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: ETHERSCAN_API_KEY, // Configuración para verificación
   },
+  paths: {
+    artifacts: "./artifacts",
+    cache: "./cache",
+    sources: "./contracts",
+    tests: "./test",
+  },
 };
 //npx hardhat verify --network sepolia <contract_address> <constructor_arguments>
 // para verificar contratos
