@@ -1,6 +1,7 @@
 import { HardhatUserConfig, vars } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@nomiclabs/hardhat-etherscan";
+import "@nomiclabs/hardhat-etherscan";// Plugin de verificación de Etherscan
+
 //npm install --save-dev @nomiclabs/hardhat-etherscan
 //Para verificar contratos
 const ALCHEMY_API_KEY = vars.get("ALCHEMY_API_KEY") || "";
