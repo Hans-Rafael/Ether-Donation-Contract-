@@ -4,7 +4,7 @@ import "@nomiclabs/hardhat-etherscan";
 //npm install --save-dev @nomiclabs/hardhat-etherscan
 //Para verificar contratos
 const ALCHEMY_API_KEY = vars.get("ALCHEMY_API_KEY") || "";
-const PRIVATE_KEY = vars.get("PRIVATE_KEY") || "";
+const PRIVATE_KEY = vars.get("PRIVATE_KEY") || ""; //clave privada de MetaMask Sepolia
 const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY") || "";//para verificar contratos
 //npx hardhat vars set ALCHEMY_API_KEY para configurar variables
 const config: HardhatUserConfig = {
