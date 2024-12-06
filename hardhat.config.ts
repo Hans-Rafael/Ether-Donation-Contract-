@@ -6,9 +6,9 @@ import "@nomiclabs/hardhat-etherscan";
 const ALCHEMY_API_KEY = vars.get("ALCHEMY_API_KEY") || "";
 const PRIVATE_KEY = vars.get("PRIVATE_KEY") || "";
 const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY") || "";//para verificar contratos
-
+//npx hardhat vars set ALCHEMY_API_KEY para configurar variables
 const config: HardhatUserConfig = {
-  solidity: "0.8.18",
+  solidity: "0.8.27", // versión a usar en constractos 
   networks: {
     sepolia: {
       url: `https://eth-sepolia.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
@@ -19,5 +19,6 @@ const config: HardhatUserConfig = {
     apiKey: ETHERSCAN_API_KEY, // Configuración para verificación
   },
 };
-
+//npx hardhat verify --network sepolia <contract_address> <constructor_arguments>
+// para verificar contratos
 export default config;
